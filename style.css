@@ -32,6 +32,7 @@ body{
     border-radius: 38px;
     background-color:rgb(236, 244, 250);
     position: relative;
+    
 
 }
 .box::before {
@@ -48,7 +49,7 @@ body{
 h1{
     font-weight: bold;
     font-size: 36px;
-    padding: 30px 0;
+    padding: 15px 0;
 }
 .content{
     padding: 0 40px;
@@ -57,15 +58,15 @@ h1{
     background: #fff;
     box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
     border-radius: 28px;
-    padding: 20px  0;
-    margin-bottom: 20px;
+    padding: 10px  0;
+    margin-bottom: 10px;
 }
 .input label{
     display: block;
     font-size: 18px;
     font-weight: 600;
     color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .input input{
     outline: none;
@@ -73,7 +74,7 @@ h1{
     border-bottom: 1px solid #4f7df9 ;
     width: 60%;
     text-align: center;
-    font-size: 28px;
+    font-size: 16px;
     font-family: 'Nunito', sans-serif;
 }
 button#calculate{
@@ -84,11 +85,38 @@ button#calculate{
     border-radius: 12px;
     padding: 12px 0;
     width: 100%;
+    margin-top: 5px;
     outline: none;
     border: none;
     transition: background .2s ease;
 }
 button#calculate:hover{
     background: #0044ff;
+
+}
+.result {
+    padding: 20px 10px ;
+}
+.result p{
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 10px ;
+}
+.result #result{
+    font-size: 22px;
+    font-weight:900 ;
+    color: #4f7df9;
+    background-color: #e4e1e1;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 10px;
+
+}
+#comment{
+    color: #4f7df9;
+    font-weight: 800;
+     
 
 }
