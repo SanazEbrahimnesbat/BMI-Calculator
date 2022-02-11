@@ -1,0 +1,94 @@
+@import  url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: url(images/BMI2.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+.container {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    transform: translate(-25%,-25%);
+
+}
+.box{
+    min-width: 400px;
+    text-align: center;
+    margin-right: 420px;
+    margin-top: 50px;
+    border-radius: 38px;
+    background-color:rgb(236, 244, 250);
+    position: relative;
+
+}
+.box::before {
+    content: '';
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
+    border-radius: 60px;
+    z-index: -1;
+}
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+}
+.content{
+    padding: 0 40px;
+}
+.input{
+    background: #fff;
+    box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
+    border-radius: 28px;
+    padding: 20px  0;
+    margin-bottom: 20px;
+}
+.input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4f7df9 ;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+button#calculate{
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    background-color: #4f7df9;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: background .2s ease;
+}
+button#calculate:hover{
+    background: #0044ff;
+
+}
