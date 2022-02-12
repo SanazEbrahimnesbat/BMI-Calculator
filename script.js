@@ -1,9 +1,9 @@
-//Create new function like this:
-//function calculateBMI(weight, height) {
-//    height = height / 100
-//    let BMI = (weight / (height * height));
-//    return BMI.toFixed(2);
-//}
+
+function calculateBMI(weight, height) {
+    height = height / 100
+    let BMI = (weight / (height * height));
+    return BMI.toFixed(2);
+}
 const btn = document.getElementById('calculate');
 
 btn.addEventListener('click', function(){
@@ -13,34 +13,31 @@ btn.addEventListener('click', function(){
 
 
     if (height == '' || weight == '') {
-       //becareful about ; at end 
+      
        alert('Please fill out the input fields')
        return;
     
     }
-    // BMI = weight in KG / (height in m * height in m)
-    height = height / 100
-    let BMI = (weight /(height * height));
-    BMI = BMI.toFixed(2);
-   // const BMI = calculateBMI(weight, height)
+    
+    const BMI = calculateBMI(weight, height)
     document.querySelector('#result').innerHTML = BMI;
 
     let status = '';
     if(BMI < 18.5){
       status = "Underweight";
     }
-    if (BMI >= 18.5 && BMI < 25){ // use 'else if' instead of 'if'
+    else if (BMI >= 18.5 && BMI < 25){ 
         status = "Healthy";
     }
-    if (BMI >= 25 && BMI < 30) { // use 'else if' instead of 'if'
+    else if (BMI >= 25 && BMI < 30) { 
         status = "Overweight";
     }
-    if (BMI >= 30) { // use 'else if' instead of 'if'
+    else if (BMI >= 30) { 
         status = "Obese";
     }
- //is better to use class insted of id='comment'   
-document.querySelector('.comment').innerHTML = `Comment: you are;
-<span id="comment"> ${status}</span>`;
+   
+document.querySelector('.comment').innerHTML = `Comment: you are
+<span class = "comment"> ${status}</span>`;
     
 
 });
